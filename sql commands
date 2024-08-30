@@ -1,4 +1,4 @@
-// sql commands  DDL commands .
+// sql commands .
 
 CREATE 
 
@@ -12,3 +12,22 @@ CREATE TABLE Persons (
     Address varchar(255),
     City varchar(255)
 );
+
+
+TRUNCATE
+
+syntax : TRUNCATe TABLE table name ;
+
+DROP
+syntax : DROP TABLE table_name;
+
+SELECT 
+
+SYntax : SELECT col1,col2 from TABLE_name  WHERE condition ;
+
+INSERT 
+
+Syntax: INSERT INTO table_name (col1,col2...) VALUES (val1,val2..);
+
+
+
