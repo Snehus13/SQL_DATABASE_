@@ -30,4 +30,41 @@ INSERT
 Syntax: INSERT INTO table_name (col1,col2...) VALUES (val1,val2..);
 
 
+Joins in Sql :
+
+INNERJOIN  :PROVIDES THE COMMON RECORDS FROM BOTH TABLES
+LEFTJOIN   :PROVIDES ALL RECORDS FROM LEFT TABLE AND MATCHED RECORDS FROM RIGHTTABLE.
+RIGHTJOIN  :PROVIDES ALL RECORDS FROMRIGHT TABLE AND MATCHED RECORDS FROM LEFT TABLE
+FULLJOIN   :PROVIDES ALL THE RECORDS WHEN THERE IS MATCH IN EITHER LEFT OR RIGHT TABLE
+
+
+CUSTOMER TABLE          PAYMENT TABLE
+ID CUSTOMER-NAME       ID   MODE
+1    SNEHAL             1   GPAY
+2    ADVAIT             2   PPAY
+3    JATIN              3    CARD
+4    NIKKI              5    CASH
+
+INNERJOIN
+
+SELECT *
+FROM customer As c
+INNER JOIN payment As p
+on c.customer_id=p.customer_id
+
+LEFTJOIN
+
+SELECT *
+FROM customer As c
+LEFTJOIN payment As p
+on c.customer_id=p.customer.id
+
+RIGHTJOIN
+
+SELCT*
+FROM customer As c
+RIGHT JOIN payment As p
+on c.customer_id=p.customer_id
+
+
 
